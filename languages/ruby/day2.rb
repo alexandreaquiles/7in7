@@ -635,6 +635,17 @@ puts
 puts "visiting the entire family tree"
 family_tree.visit_all {|node| puts node.node_name}
 
+# Visiting a node from the family tree
+# grandpa
+
+# visiting the entire family tree
+# grandpa
+# dad
+# child 1
+# child 2
+# uncle
+# child 3
+# child 4
 
 # • Write a simple grep that will print the lines of a file having any occurrences of a phrase anywhere in that line.
 #   You will need to do a simple regular expression match and read lines from a file. (This is surprisingly simple in Ruby.)
