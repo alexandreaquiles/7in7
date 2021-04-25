@@ -825,20 +825,17 @@ Product := Object clone
 // Product_0x24aabe0:
 //   type             = "Product"
 
-aSlot := "type"Product price := 55
-==> 55
-Io> Product price
-==> 55
-// ==> type
-
-Product getSlot(aSlot)
-// ==> Product
-
 Product price := 55
 // ==> 55
 
 Product price
 // ==> 55
+
+aSlot := "type"
+// ==> type
+
+Product getSlot(aSlot)
+// ==> Product
 
 Product calculateDiscount := method(0.1 * price)
 // ==> method(
@@ -863,6 +860,12 @@ aProductMethod := Product getSlot(aSlot)
 
 Product aProductMethod
 // ==> 5.5
+
+//aProductMethod()
+//   Exception: Object does not respond to 'price'
+//   ---------
+//   Object price                         Command Line 1
+//   Object aProductMethod                Command Line 1
 
 // Spend a little time playing with slots and prototypes.
 // Make sure you understand how prototypes work.
